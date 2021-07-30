@@ -1,0 +1,7 @@
+---
+  - name: create user
+    hosts: localhost
+    tasks:
+      - name: usercreation
+        debug:
+          msg: "user created"
