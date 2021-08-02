@@ -1,0 +1,8 @@
+---
+  - name: generate system details
+    hosts: localhost
+    tasks:
+      - name: system details
+        template:
+          src: facts.j2
+          dest: /etc/motd
