@@ -1,0 +1,7 @@
+---
+  - name: install JDK
+      apt: pkg=openjdk-{{ java_major_version }}-jdk={{ java_version }}
+    register: jdk_out
+
+  - debug:
+       msg: "{jdk_out}"

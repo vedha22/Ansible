@@ -1,0 +1,8 @@
+---
+  - name: tree install
+      apt:
+        name: tree
+    register: install_tree
+
+  - debug:
+      msg: "{{install_tree}}"
