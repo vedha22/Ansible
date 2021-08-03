@@ -2,7 +2,7 @@
   - name: install JDK
       apt:
         name: default-jdk
-    register: jdk_out
+    register: jdk_output
 
   - debug:
-       msg: "{{ jdk_out }}"
+       msg: "{{ jdk_output }}"

@@ -3,11 +3,11 @@
     apt:
        name: python3
        state: latest
-    register: python_installed
+    register: python_install
 
   - debug:
-       msg: "{{ python_installed }}"
-       
+       msg: "{{ python_install }}"
+
   - name: Block creation
     block:
       - name: check file
@@ -20,3 +20,4 @@
         file:
           path: /root/vedha/Ansible/downloads
           state: directory
+          mode: 0775

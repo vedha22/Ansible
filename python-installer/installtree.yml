@@ -2,7 +2,7 @@
   - name: tree install
       apt:
         name: tree
-    register: install_tree
+    register: install_treesoftware
 
   - debug:
-      msg: "{{install_tree}}"
+      msg: "{{install_treesoftware}}"
