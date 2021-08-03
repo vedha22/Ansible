@@ -3,7 +3,7 @@
     apt:
        name: tree
        state: present
-    register: tree_install
+    register: tree_installed
     tags: installer
   - debug:
-       msg: "{{ tree_install }}"
+       msg: "{{ tree_installed }}"
