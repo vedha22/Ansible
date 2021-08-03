@@ -4,9 +4,11 @@
        name: python3
        state: latest
     register: python_install
-
+    tags: installer
   - debug:
        msg: "{{ python_install }}"
+
+
 
   - name: Block creation
     block:
@@ -21,3 +23,5 @@
           path: /root/vedha/Ansible/downloads
           state: directory
           mode: 0775
+      tags: directory
+      
