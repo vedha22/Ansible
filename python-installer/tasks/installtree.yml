@@ -1,7 +1,7 @@
 ---
   - name: Install tree package
     apt:
-       name: tree package
+       name: tree
        state: present
     register: tree_install
     tags: installer
