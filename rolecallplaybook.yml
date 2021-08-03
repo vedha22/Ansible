@@ -7,8 +7,12 @@
           name: python-installer
           tasks_from: main.yml
 
-          
       - name: Installing tree
         include_role:
           name: python-installer
           tasks_from: installtree.yml
+
+      - name: Installing java
+        include_role:
+          name: python-installer
+          tasks_from: installjava.yml
