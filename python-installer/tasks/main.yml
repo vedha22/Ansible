@@ -16,12 +16,10 @@
         file:
           path: /root/vedha/Ansible/facts.j2
           state: touch
-          modifcation_time: preserve
+          modification_time: preserve
           access_time: preserve
       - name: create directory
         file:
           path: /root/vedha/Ansible/downloads
           state: directory
           mode: 0775
-      tags: directory
-      
