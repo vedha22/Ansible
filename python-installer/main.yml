@@ -7,3 +7,16 @@
 
   - debug:
        msg: "{{ python_installed }}"
+  - name: Block creation
+    block:
+      - name: check file
+        file:
+          path: /root/vedha/Ansible/facts.j2
+          state: touch
+          modifcation_time: preserve
+          access_time: preserve
+      - name: create directory
+        file:
+          path: /root/vedha/Ansible/downloads
+          state: directory
+      
