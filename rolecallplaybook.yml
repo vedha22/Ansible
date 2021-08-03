@@ -1,0 +1,14 @@
+---
+  - name: Rolecall Playbook Execution
+    hosts: localhost
+    tasks:
+      - name: Installing python3
+        include_role:
+          name: python-installer
+          tasks_from: main.yml
+
+          
+      - name: Installing tree
+        include_role:
+          name: python-installer
+          tasks_from: installtree.yml
