@@ -1,9 +1,9 @@
 ---
-  - name: tree install
+  - name: Install tree package
     apt:
-        name: tree
-        state: present
-    register: install_tree
-
+       name: tree package
+       state: present
+    register: tree_install
+    tags: installer
   - debug:
-      msg: "{{ install_tree }}"
+       msg: "{{ tree_install }}"
